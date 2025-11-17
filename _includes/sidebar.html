@@ -8,6 +8,11 @@
         {{ site.title }}
       </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+
+    <div class="sidebar-image" style="text-align: center; margin: 15px 0;">
+      <img src="{{ '/assets/img/3.JPG' | relative_url }}" alt="侧边栏图片" style="width: 80%; max-width: 200px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+    </div>
+
     <p class="lead">{{ site.description }}</p>
   </header>
   {% include sidebar-nav-links.html %}
@@ -16,6 +21,16 @@
     <span class="site-version">Currently v{{ site.version }}</span>
   {% endif %}
 
-  {% include sidebar-icon-links.html %}
+  <div class="sidebar-email" style="text-align: left; margin: 20px 0; padding-left: 0px;">
+    <a href="mailto:yshench@connect.ust.hk" style="color: #fff; text-decoration: none; display: inline-flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px;">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <span style="font-size: 20px;">yshench@connect.ust.hk</span>
+    </a>
+  </div>
+
+  {% comment %}{% include sidebar-icon-links.html %}{% endcomment %}
   {% include copyright.html %}
 </div>

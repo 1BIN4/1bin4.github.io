@@ -1,8 +1,10 @@
 ---
-layout: post
-title: Hello Hydeout
+layout: page
+title: Welcome!
 excerpt_separator:  <!--more-->
 ---
+
+# Yibin Shen | 沈艺彬 
 
 Hydeout updates the original [Hyde](https://github.com/poole/hyde)
 theme for [Jekyll](http://jekyllrb.com) 3.x and 4.x and adds new functionality.

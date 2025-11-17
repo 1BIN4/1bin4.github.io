@@ -1,4 +1,238 @@
 ---
-layout: index
-title: Home
+layout: page
+title: ""
+excerpt_separator:  <!--more-->
 ---
+
+<h1>Welcome!</h1>
+<h1>Yibin Shen | 沈艺彬</h1>
+<p>I'm currently a second-year PhD student of <a href="https://github.com/hkust-spark" target="_blank">Spark lab</a> @ HKUST, under the supervision of Prof. <a href="https://zilimeng.com/" target="_blank">Zili Meng</a>. 
+    I obtained my bachelor's degree in Computer Science and Technology from Southeast University in 2024, 
+    where I was fortunate to work with Prof. <a href="https://cs.seu.edu.cn/wjwu/main.htm" target="_blank">Wenjia Wu</a>.<br>
+My research interests broadly lie in the areas of wireless networking, video streaming and system for AI.
+</p>
+
+<h2>Publications</h2>
+
+<div class="publications-list">
+  <div class="publication-item">
+    <p>
+      <strong>Yibin Shen</strong> and <a href="https://zilimeng.com/" target="_blank">Zili Meng</a>,<br>
+      <em>Law: Towards Consistent Low Latency in 802.11 Home Networks,</em><br>
+      <a href="https://www.usenix.org/conference/nsdi26" target="_blank">USENIX NSDI 2026</a>, Renton, WA, USA. (To appear)
+      <a href="law-nsdi26.pdf" target="_blank">(paper)</a>
+    </p>
+  </div>
+  
+  <div class="publication-item">
+    <p>
+      <strong>Yibin Shen</strong>, Chi Wang, Yujin Xiang, Xinhe Li and <a href="https://cs.seu.edu.cn/wjwu/main.htm" target="_blank">Wenjia Wu</a>,<br>
+      <em>QESched: QoE-aware and Energy-efficient Scheduling for Real-time Danmu Video Streaming in Wi-Fi Networks,</em><br>
+      <a href="http://www.icccn.org/icccn23/index.html" target="_blank">IEEE ICCCN 2023</a>, Waikiki Beach, Honolulu, HI, USA.
+      <a href="http://www.icccn.org/icccn23/program/technical-program/index.html" target="_blank">(website)</a>
+      <a href="qesched-icccn23.pdf" target="_blank">(paper)</a>
+    </p>
+  </div>
+</div>
+
+<h2>Education</h2>
+
+<div class="education-list">
+  <p>
+    <strong>The Hong Kong University of Science and Technology</strong>, Hong Kong SAR, China, 2024-present<br>
+    &nbsp;&nbsp;Ph.D. in Electronic and Computer Engineering<br>
+    &nbsp;&nbsp;<a href="https://ece.hkust.edu.hk/" target="_blank">Department of Electronic and Computer Engineering</a><br>
+  </p>
+
+  <p>
+    <br>
+    <strong>Southeast University</strong>, Nanjing, China, 2020-2024<br>
+    &nbsp;&nbsp;B.Eng. in Computer Science and Technology<br>
+    &nbsp;&nbsp;2021-2024: <a href="https://cse.seu.edu.cn/" target="_blank">School of Computer Science and Engineering</a><br>
+    &nbsp;&nbsp;2020-2021: <a href="https://wjx.seu.edu.cn/wjxen/" target="_blank">Chien-Shiung Wu College</a><br>
+  </p>
+</div>
+
+<h2>Experience</h2>
+<h3>Internship</h3>
+<div class="education-list">
+  <p>
+    <strong>The Hong Kong University of Science and Technology</strong>, Hong Kong SAR, China, 2024.2-2024.8<br>
+    &nbsp;&nbsp;Research assistant<br>
+    &nbsp;&nbsp;<a href="https://ece.hkust.edu.hk/" target="_blank">Department of Electronic and Computer Engineering</a><br>
+  </p>
+
+  <p>
+    <br>
+    <strong>Huawei Technologies Co., Ltd</strong>, Nanjing, China, 2023.6-2023.9<br>
+    &nbsp;&nbsp;Information engineer<br>
+    &nbsp;&nbsp;Department of Data Communication<br>
+  </p>
+</div>
+
+<h3>Teaching</h3>
+<div class="education-list">
+  <p>
+    <strong>HKUST ELEC 3120</strong>, Fall, 2025-2026<br>
+    &nbsp;&nbsp;Instructor: Prof. <a href="https://zilimeng.com/" target="_blank">Zili Meng</a><br>
+    &nbsp;&nbsp;Computer Communication Networks<br>
+    &nbsp;&nbsp;Teaching assistant<br>
+  </p>
+
+  <p>
+    <br>
+    <strong>HKUST ELEC 1200</strong>, Summer, 2024-2025<br>
+    &nbsp;&nbsp;Instructor: Prof. <a href="https://ece.hkust.edu.hk/eeshibochen" target="_blank">Shibo Chen</a><br>
+    &nbsp;&nbsp;A System View of Communications: from Signals to Packets<br>
+    &nbsp;&nbsp;Teaching assistant<br>
+  </p>
+</div>
+
+<style>
+/* 基础样式 */
+.content {
+  max-width: 1100px !important;
+  width: 100% !important;
+  margin: 0 auto; /* 内容居中 */
+  padding: 0 2rem;
+}
+
+/* 大屏幕 (>1200px) */
+@media (min-width: 1200px) {
+  #sidebar {
+    width: 20rem; /* 侧边栏宽度 */
+  }
+  
+  .content {
+    max-width: 1200px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 中等屏幕 (768px-1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  #sidebar {
+    width: 18rem;
+  }
+  
+  .content {
+    max-width: 900px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 小屏幕 (<768px) */
+@media (max-width: 767px) {
+  #sidebar {
+    width: 100%;
+    position: relative;
+  }
+  
+  .content {
+    max-width: 100% !important;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+}
+
+/* 其他样式保持不变 */
+.education-list {
+  margin: 20px 0;
+}
+
+.education-list p {
+  margin: 0;
+  line-height: 1.6;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.publication, .publication-item {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #f1974c;
+}
+
+.publications-list {
+  margin: 20px 0;
+}
+
+.publication p, .publication-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.publication a, .publication-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.publication a:hover, .publication-item a:hover {
+  text-decoration: underline;
+}
+</style>
+
+{% comment %}
+      <a href="paper-link.pdf" target="_blank">(website)</a>
+      <a href="paper-link.pdf" target="_blank">(paper)</a>
+      <a href="slides-link.pdf" target="_blank">(slides)</a>
+      <a href="code-link" target="_blank">(video)</a>
+
+
+<p>Hydeout updates the original <a href="https://github.com/poole/hyde">Hyde</a> theme for <a href="http://jekyllrb.com">Jekyll</a> 3.x and 4.x and adds new functionality.</p>
+
+<h3>Keep It Simple</h3>
+
+<p>In keeping with the original Hyde theme, Hydeout aims to keep the overall design lightweight and plugin-free. JavaScript is currently limited only to Disqus and Google Analytics (and is only loaded if you provide configuration variables).</p>
+
+<p>Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available, the CSS degrades into a single column layout.</p>
+
+<h3>Customization</h3>
+
+<p>Hydeout replaces Hyde's class-based theming with the use of the following SASS variables:</p>
+
+<pre><code class="language-scss">$sidebar-bg-color: #202020 !default;
+$sidebar-fg-color: white !default;
+$sidebar-sticky: true !default;
+$layout-reverse: false !default;
+$link-color: #268bd2 !default;</code></pre>
+
+<p>To override these variables, create your own <code>assets/css/main.scss</code> file. Define your own variables, then import in Hydeout's SCSS, like so:</p>
+
+<pre><code>---
+# Jekyll needs front matter for SCSS files
+---
+
+$sidebar-bg-color: #ac4142;
+$link-color: #ac4142;
+$sidebar-sticky: false;
+@use "hydeout";</code></pre>
+
+<p>See the <a href="https://github.com/fongandrew/hydeout/blob/master/_sass/hydeout/_variables.scss">_variables</a> file for other variables you can override.</p>
+
+<p>You can also insert custom head tags (e.g. to load your own stylesheets) by defining your own <code>_includes/custom-head.html</code> or insert tags at the end of the body (e.g. for custom JS) by defining your own <code>_includes/custom-foot.html</code>.</p>
+
+<h3>New Features</h3>
+
+<ul>
+  <li>Hydeout also adds a new tags page (accessible in the sidebar) and a new "category" layout for dedicated category pages.</li>
+  
+  <li>Category pages are automatically added to the sidebar. All other pages must have <code>sidebar_link: true</code> in their front matter to show up in the sidebar.</li>
+  
+  <li>A simple redirect-to-Google search is available. If you want to use Google Custom Search or Algolia or something with more involved, override the <code>search.html</code>.</li>
+  
+  <li>Disqus integration is ready out of the box. Just add the following to your config file:
+    <pre><code class="language-yaml">disqus:
+  shortname: my-disqus-shortname</code></pre>
+    If you don't want Disqus or want to use something else, override <code>comments.html</code>.
+  </li>
+  
+  <li>For Google Analytics support, define a <code>google_analytics</code> variable with your property ID in your config file.</li>
+</ul>
+
+<p>There's also a bunch of minor tweaks and adjustments throughout the theme. Hope this works for you!</p>
+{% endcomment %}
