@@ -6,10 +6,10 @@ excerpt_separator:  <!--more-->
 
 <h1>Welcome!</h1>
 <h1>Yibin Shen | 沈艺彬</h1>
-<p>I'm currently a second-year PhD student of <a href="https://github.com/hkust-spark" target="_blank">Spark lab</a> @ HKUST, under the supervision of Prof. <a href="https://zilimeng.com/" target="_blank">Zili Meng</a>. 
+<p>I'm currently a third-year PhD student of <a href="https://github.com/hkust-spark" target="_blank">Spark lab</a> @ HKUST, under the supervision of Prof. <a href="https://zilimeng.com/" target="_blank">Zili Meng</a>.
     I obtained my bachelor's degree in Computer Science and Technology from Southeast University in 2024, 
     where I was fortunate to work with Prof. <a href="https://cs.seu.edu.cn/wjwu/main.htm" target="_blank">Wenjia Wu</a>.<br>
-My research interests broadly lie in the areas of wireless networking, video streaming and system for AI.
+My research interests broadly lie in building fundamental systems for AI computing and wireless networking.
 </p>
 
 <h2>Publications</h2>
@@ -19,8 +19,10 @@ My research interests broadly lie in the areas of wireless networking, video str
     <p>
       <strong>Yibin Shen</strong> and <a href="https://zilimeng.com/" target="_blank">Zili Meng</a>,<br>
       <em>Law: Towards Consistent Low Latency in 802.11 Home Networks,</em><br>
-      <a href="https://www.usenix.org/conference/nsdi26" target="_blank">USENIX NSDI 2026</a>, Renton, WA, USA. (To appear)
+      <a href="https://www.usenix.org/conference/nsdi26" target="_blank">USENIX NSDI 2026</a>, Renton, WA, USA.
+      <a href="https://www.usenix.org/conference/nsdi26/presentation/shen-yibin" target="_blank" rel="noopener noreferrer">(website)</a>
       <a href="law-nsdi26.pdf" target="_blank">(paper)</a>
+      <a href="https://www.youtube.com/watch?v=BAT-DEx037c" target="_blank" rel="noopener noreferrer">(video)</a>
     </p>
   </div>
   
@@ -73,7 +75,7 @@ My research interests broadly lie in the areas of wireless networking, video str
 <h3>Teaching</h3>
 <div class="education-list">
   <p>
-    <strong>HKUST ELEC 3120</strong>, Fall, 2025-2026<br>
+    <strong>HKUST ELEC 3120</strong>, Fall, 2025-2026 and 2026-2027<br>
     &nbsp;&nbsp;Instructor: Prof. <a href="https://zilimeng.com/" target="_blank">Zili Meng</a><br>
     &nbsp;&nbsp;Computer Communication Networks<br>
     &nbsp;&nbsp;Teaching assistant<br>
@@ -110,8 +112,8 @@ My research interests broadly lie in the areas of wireless networking, video str
   }
 }
 
-/* 中等屏幕 (768px-1200px) */
-@media (min-width: 768px) and (max-width: 1199px) {
+/* 与主题的侧栏断点保持一致 */
+@media (min-width: 49rem) and (max-width: 1199px) {
   #sidebar {
     width: 18rem;
   }
@@ -123,8 +125,8 @@ My research interests broadly lie in the areas of wireless networking, video str
   }
 }
 
-/* 小屏幕 (<768px) */
-@media (max-width: 767px) {
+/* 单列布局：与主题的 49rem 断点保持一致 */
+@media (width < 49rem) {
   #sidebar {
     width: 100%;
     position: relative;
@@ -137,7 +139,34 @@ My research interests broadly lie in the areas of wireless networking, video str
   }
 }
 
-/* 其他样式保持不变 */
+/* Major sections have more breathing room and a clear heading hierarchy. */
+.home .content > h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.home .content > h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #f1974c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #515151;
+}
+
+.home .content > h2 + h3 {
+  margin-top: 1.5rem;
+}
+
+.home .content > h3 + .education-list {
+  margin-top: 0.75rem;
+}
+
 .education-list {
   margin: 20px 0;
 }
