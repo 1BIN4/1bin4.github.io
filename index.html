@@ -6,10 +6,11 @@ excerpt_separator:  <!--more-->
 
 <h1>Welcome!</h1>
 <h1>Yibin Shen | 沈艺彬</h1>
-<p>I'm currently a third-year PhD student of <a href="https://github.com/hkust-spark" target="_blank">Spark lab</a> @ HKUST, under the supervision of Prof. <a href="https://zilimeng.com/" target="_blank">Zili Meng</a>.
+<p class="profile-intro">I'm currently a third-year PhD student of <a href="https://github.com/hkust-spark" target="_blank">Spark lab</a> @ HKUST, under the supervision of Prof. <a class="person-name" href="https://zilimeng.com/" target="_blank">Zili Meng</a>.
     I obtained my bachelor's degree in Computer Science and Technology from Southeast University in 2024, 
-    where I was fortunate to work with Prof. <a href="https://cs.seu.edu.cn/wjwu/main.htm" target="_blank">Wenjia Wu</a>.<br>
-My research interests broadly lie in building fundamental systems for AI computing and wireless networking.
+    where I was fortunate to work with Prof. <a class="person-name" href="https://cs.seu.edu.cn/wjwu/main.htm" target="_blank">Wenjia Wu</a>.
+</p>
+<p>My research interests broadly lie in building fundamental systems for AI computing and wireless networking.
 </p>
 
 <h2>Publications</h2>
@@ -99,6 +100,14 @@ My research interests broadly lie in building fundamental systems for AI computi
   padding: 0 2rem;
 }
 
+.profile-intro {
+  margin-bottom: 0.5rem;
+}
+
+.person-name {
+  white-space: nowrap;
+}
+
 /* 大屏幕 (>1200px) */
 @media (min-width: 1200px) {
   #sidebar {
@@ -106,9 +115,20 @@ My research interests broadly lie in building fundamental systems for AI computi
   }
   
   .content {
-    max-width: 1200px !important;
+    max-width: 1280px !important;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* 高窗口中保持个人信息靠近正文顶部 */
+@media (min-width: 64rem) and (min-height: 75rem) {
+  .home #sidebar {
+    top: 4rem;
+    bottom: auto;
+    max-height: calc(100vh - 8rem);
+    max-height: calc(100dvh - 8rem);
+    overflow-y: auto;
   }
 }
 
