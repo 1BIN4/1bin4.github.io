@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   {% assign page_title = page.title | default: "" | strip %}
-  <title>{% if page_title == "" or page_title == "Home" %}{{ site.title | escape }}{% else %}{{ page_title | escape }} &middot; {{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.seo_title %}{{ page.seo_title | escape }}{% elsif page_title == "" or page_title == "Home" %}{{ site.title | escape }}{% else %}{{ page_title | escape }} &middot; {{ site.title | escape }}{% endif %}</title>
 
   {% include google-analytics.html %}
 
