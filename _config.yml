@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            Yibin Shen
-tagline:          'A Jekyll theme'
+tagline:          'Personal website of Yibin Shen'
 description:      |
                   PhD student at <a href="https://hkust.edu.hk/" target="_blank">HKUST</a>
                   <a href="https://ece.hkust.edu.hk/" target="_blank">Dept. of Electronic and Computer Engineering</a> 
@@ -18,8 +18,8 @@ baseurl:          ''
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Yibin Shen'
+  url:            https://1bin4.github.io/
 
 paginate:         5
 # paginate_path:    '/page:num'
